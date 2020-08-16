@@ -1,0 +1,162 @@
+/*
+Theme Name: Farm
+Theme URI: 
+Author: Carolina Nymark
+Author URI: https://themesbycarolina.com
+Template: embla
+Description: Farm is a responsive theme with large header images and a two column grid layout. Present your farm and your staff with the custom staff template, or sell your goods with the help of the WooCommerce plugin.
+Farm is white with just a hint of green and blue and has a footer widget area with room for all your widgets, including two custom widgets. Farm has two menus and support for full width content, video header and logo. The theme also has support for Jetpack.
+Version: 0.6
+Requires at least: 4.7
+Tested up to:5.5
+Requires PHP: 5.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: farm
+Tags: grid-layout, custom-menu, custom-header, custom-logo, footer-widgets, theme-options, threaded-comments, blog, accessibility-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Farm WordPress theme is based on Embla, (C) 2017-2020 Carolina Nymark
+Embla and Farm are distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/* Change the font and increase the font sizes*/
+.site-title,
+.credits,
+.more-link,
+.site-description,
+.taxonomy-description,
+.entry-title,
+.pagination h2.screen-reader-text,
+.widget-title,
+.widgettitle,
+.navigation,
+.comment-reply-title,
+.staff-member,
+.embla-recent-comments-meta {
+	font-family: 'Dancing Script', cursive;
+}
+
+
+.paged article:nth-child(1) .entry-title, 
+.entry-title {
+	font-size: 2.2em;
+}
+
+.embla-recent-comments-meta,
+.site-description,
+.navigation {
+	font-size: 1.5rem;
+}
+
+.credits {
+	font-size: 1em;
+}
+
+.comment-reply-title, 
+.no-comments, 
+.widgettitle, 
+.widget-title, 
+.post-navigation,
+.comments-area .entry-title {
+	font-size: 1.8rem;
+}
+
+/* The unerline is not as visible with this font, so lets add a different line on hover:*/
+.entry-title a:hover {
+	text-decoration: none;
+    box-shadow: inset 0 0 0 rgba(0, 115, 170, 1), 0 2px 0 rgba(0, 115, 170, 1);
+}
+
+.site-branding {
+	text-align: center;
+}
+
+.menu-wrap {
+	margin: 0 auto;
+	text-align:center;
+}
+
+.main-navigation,
+.byline,
+.credits {
+    font-weight: 400;
+}
+
+.site-header {
+	box-shadow: none;
+	border: none;
+}
+
+.wp-custom-header {
+	width: 100%;
+}
+
+.wp-custom-header img {
+    border-radius: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.05);
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (min-width: 1440px) {
+	.wp-custom-header {
+		max-width: 100%;
+	}
+}
+
+.main-navigation ul ul,
+body {
+	background: #fff;
+}
+
+.main-navigation ul ul {
+	box-shadow: none;
+}
+
+.site-footer {
+	box-shadow: inset 0 0 150px rgba(234,249,228, 0.9);
+}
+
+article.comment-body,
+article {
+	border: 1px solid rgba(234,249,228, 0.8);
+}
+
+.widget-title {
+    border-bottom: 0;
+}
+
+.paged article.post {
+    grid-column: span 3;
+}
+
+@media screen and (min-width: 1300px) {
+	article:nth-child(n+6) {
+		grid-column: span 3;
+	}
+}
+
+/*Staff page template */
+.staff-member {
+	font-size: 1.4em;
+	text-align: center;
+    display: inline-block;
+	width: auto;
+	margin: 0.6em 0.6em 0.6em 0;
+	vertical-align: top;
+	padding: 0.8em;
+}
+
+.staff-member .avatar {
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 1.5em;
+}
+
+.staff-description {
+	font-size: 0.9em;
+	text-transform: initial;
+}

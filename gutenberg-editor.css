@@ -1,0 +1,5 @@
+
+/* Matches entry-title in style.css. */
+.editor-post-title__block .editor-post-title__input {
+    font-family: 'Dancing Script', cursive ! important;
+}
